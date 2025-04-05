@@ -33,7 +33,8 @@ async function run(prompt) {
   const result = await chatSession.sendMessage(prompt);
   const response = result.response.text();
 
-  // Check if there are response candidates
+
+  
   if (result.response.candidates) {
       const candidates = result.response.candidates;
       for (let candidate_index = 0; candidate_index < candidates.length; candidate_index++) {
@@ -53,6 +54,8 @@ async function run(prompt) {
   }
 
   console.log(response);
+
 }
 
-export default run;
+export default run
+

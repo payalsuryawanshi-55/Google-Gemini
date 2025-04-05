@@ -1,6 +1,6 @@
 import React from "react";
-import Sidebar from "./components/Sidebar";  // ✅ Import Sidebar correctly
-import MainContent from "./components/MainContent";  // ✅ Import MainContent correctly
+import Sidebar from "./components/Sidebar"; 
+import MainContent from "./components/MainContent";  
 
 const App = () => {
   return (
@@ -15,3 +15,5 @@ const App = () => {
 };
 
 export default App;
+
+
