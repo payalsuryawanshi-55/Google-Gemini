@@ -10,7 +10,7 @@ const ContextProvider = (props) => {
   const [recentPrompt, setRecentPrompt] = useState ("")
   const [prevPrompt, setPrevPrompt] = useState ([])
   const [showResult, setShowResult] = useState (false)
- const [loading, setLoading] = useState (false)
+  const [loading, setLoading] = useState (false)
   const [resultData, setResultData] = useState ("")
 
   const delayPara = (index, nextWord) => {

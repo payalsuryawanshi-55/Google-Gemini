@@ -23,7 +23,7 @@ const Sidebar = () => {
       {/* Sidebar Toggle */}
       <IoMenu
         onClick={() => setExtended(!extended)}
-        className="text-2xl block cursor-pointer mb-5 mx-auto"
+        className="text-2xl block cursor-pointer mb-5 ml-0"
       />
 
       {/* New Chat Button */}
@@ -36,19 +36,22 @@ const Sidebar = () => {
       </div>
 
       {/* Message History */}
+
+
       <div className="flex flex-col mt-4 space-y-2 overflow-y-auto max-h-80">
         {prevPrompt && prevPrompt.length > 0 ? (
           prevPrompt.map((prompt, index) => (
             <div
               key={index}
               onClick={() => loadPrompt(prompt)}
-              className="flex items-center gap-2 px-4 py-2 text-gray-700 bg-gray-200 rounded-lg cursor-pointer hover:bg-gray-300"
-            ><FaMessage className="text-xl" />
-              {extended && <p className="truncate">{prompt}</p>}
+              className="flex items-center gap-2 px-4 py-2 text-gray-700
+               bg-gray-200 rounded-lg cursor-pointer hover:bg-gray-300">
+          <FaMessage className="text-2xl" />
+              {extended && <p className="truncate">{prompt}...</p>}
             </div>
           ))
         ) : (
-          extended && <p className="text-gray-500 text-sm">No History</p>
+          extended && <p className="text-gray-500 text-sm font-bold">Recent</p>
         )}
       </div>
 

@@ -16,7 +16,9 @@ export default [
         sourceType: 'module',
       },
     },
+  
     plugins: {
+      react,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
     },

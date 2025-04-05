@@ -3,22 +3,17 @@
 @tailwind utilities;
 
 
-/* Hide scrollbar for WebKit-based browsers (Chrome, Safari) */
 .scrollbar-hidden::-webkit-scrollbar {
     display: none;
   }
-  
-  /* Hide scrollbar for Internet Explorer and Edge */
-  .scrollbar-hidden {
-    -ms-overflow-style: none; /* Internet Explorer and Edge */
+    .scrollbar-hidden {
+    -ms-overflow-style: none; 
   }
-  
-  /* Hide scrollbar for Firefox */
-  .scrollbar-hidden {
-    scrollbar-width: none; /* Firefox */
+    .scrollbar-hidden {
+    scrollbar-width: none; 
   }
-  
-  /* Apply the above rules */
+
   .scrollbar-hidden {
-    overflow: auto; /* Make sure overflow is set to auto or scroll */
+    overflow: auto; 
   }
+
